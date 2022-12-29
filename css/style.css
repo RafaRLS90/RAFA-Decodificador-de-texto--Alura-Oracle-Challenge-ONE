@@ -8,7 +8,6 @@ form {
 }
 
 .criptografa {
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
@@ -20,12 +19,11 @@ form {
     flex: none;
     order: 0;
     flex-direction: 0;
-    margin-right: 35%;
-    vertical-align: top;
+    margin-right: 10%;
+    font-weight: bold;
 }
 
 .descriptografa {
-        display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 24px;
@@ -38,8 +36,13 @@ form {
         flex: none;
         order: 1;
         flex-direction: 0;
-        margin-left: 35%;
-        vertical-align: bottom;
+        font-weight: bold;
+        
+}
+
+.botoes {
+    display: inline;
+    margin: 00 00 0 5px;
 }
 
 .imagem-principal {
