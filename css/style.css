@@ -1,16 +1,28 @@
+* {
+    
+}
+
 body {
     background-image: linear-gradient(to bottom, #F0F8FF, #B0C4DE);
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 form {
     display: inline-block;
+    margin-top: 15px;
     vertical-align: bottom;
+    padding: 50px 0;
 }
 
 .titulo-principal {
     font-size: 30px;
     margin: 0 0 15px 0;
     margin-left: 15px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .input-padrao {
@@ -49,18 +61,41 @@ form {
     order: 1;
     flex-direction: 0;
     font-weight: bold;
-    margin-left: 35px;
+    margin-left: 75px;
 }
 
 .botoes {
-    display: inline;
+    display: flex;
     margin: 00 00 0 10px;
+    padding: 100px 0;
+
 }
 
-.imagem-principal {
-    width: 30%;
+main {
+    width: 40%;
     display: inline;
     margin-left: 90px;
+    margin-top: 15px;
+    position: absolute;
+    left: 550px;
+    top: 0;
+    background-color: 	#4682B4;
+    border-radius: 15px;
+    padding: 20px 0;
+}
+
+.texto-geral-retorno {
+ text-align:center;
+ margin-left: 90px;
+ margin-bottom: 100px;
+ background-color: #F0F8FF;
+ display: flex;
+}
+
+
+
+.imagem-principal {
+   
 }
 
 #buscador {
