@@ -130,6 +130,27 @@ main {
 
 #frase-de-chamada {
     width: 50%;
+    display: flex;
+}
+
+.copiar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 40%;
+    height: 67px;
+    background: #d8dfe8;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    flex: none;
+    order: 1;
+    flex-direction: 0;
+    font-weight: bold;
+    margin-left: 110px;
+    color: #000000;
+    box-shadow: 2px 2px 1px #000000;
+    display: none;
 }
 
 footer {
