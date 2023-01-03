@@ -13,7 +13,7 @@
 var texto = prompt("");
 
 // descrição de cada letra
-function criptografa (letra) {
+function criptografa (texto) {
     if (letra == "e"){
         document.write("enter")
     }
@@ -56,6 +56,44 @@ document.write("");
 // 4 Por uma outra função interna function {
 // Botão criptografar, dará o comando para alterar o texto    
 //}
+var textoOrigem = document.querySelector("label");
+
+var acaoInputCriptografa = document.querySelector("textoOrigem");
+function criptografaTexto (texto) {
+    function criptografa (texto) {
+        if (letra == "e"){
+            document.write("enter")
+        }
+    };
+    
+    function criptografa (letra) {
+        if (letra == "i"){
+            document.write("imes")
+        }
+    };
+    
+    function criptografa (letra) {
+        if (letra == "a"){
+            document.write("ai")
+        }
+    };
+    
+    function criptografa (letra) {
+        if (letra == "o"){
+            document.write("ober")
+        }
+    };
+    
+    function criptografa (letra) {
+        if (letra == "u"){
+            document.write("ufat")
+        }
+    };
+}
+
+var criptografaTexto = document.querySelector("criptografa");
+
+criptografa.onclick = criptografaTexto;
 
 return texto;
 
@@ -69,6 +107,6 @@ return texto;
 // 6 Botão descriptografar
 // function (textoOriginal) {
 //  Volta ao texto original novamente  
-
+var acaoBotaoDescriptografa = document.querySelector("descriptografar");
 
 //}
