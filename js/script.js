@@ -10,43 +10,15 @@
 //}
 
 // se letra igual a..., substitua por....
-var texto = prompt("");
+var texto = document.querySelector("input");
 
 // descrição de cada letra
-function criptografa (texto) {
-    if (letra == "e"){
-        document.write("enter")
-    }
-};
 
-function criptografa (letra) {
-    if (letra == "i"){
-        document.write("imes")
-    }
-};
-
-function criptografa (letra) {
-    if (letra == "a"){
-        document.write("ai")
-    }
-};
-
-function criptografa (letra) {
-    if (letra == "o"){
-        document.write("ober")
-    }
-};
-
-function criptografa (letra) {
-    if (letra == "u"){
-        document.write("ufat")
-    }
-};
 
 // 2 function textoAtivo (texto) {
     function mostra(textoEntrada) {
 
-        document.write(textoEntrada);
+        document.write("input");
         
 };
 // 3 Receba texto,
@@ -56,46 +28,43 @@ document.write("");
 // 4 Por uma outra função interna function {
 // Botão criptografar, dará o comando para alterar o texto    
 //}
-var textoOrigem = document.querySelector("label");
+var texto = document.querySelector("input");
 
-var acaoInputCriptografa = document.querySelector("textoOrigem");
-function criptografaTexto (texto) {
-    function criptografa (texto) {
-        if (letra == "e"){
-            document.write("enter")
-        }
-    };
-    
-    function criptografa (letra) {
-        if (letra == "i"){
-            document.write("imes")
-        }
-    };
-    
-    function criptografa (letra) {
-        if (letra == "a"){
-            document.write("ai")
-        }
-    };
-    
-    function criptografa (letra) {
-        if (letra == "o"){
-            document.write("ober")
-        }
-    };
-    
-    function criptografa (letra) {
-        if (letra == "u"){
-            document.write("ufat")
-        }
-    };
-}
+function criptografar (texto) {
+    if (letra == "e"){
+        document.write("enter")
+    }
+};
 
-var criptografaTexto = document.querySelector("criptografa");
+function criptografar (texto) {
+    if (letra == "i"){
+        document.write("imes")
+    }
+};
 
-criptografa.onclick = criptografaTexto;
+function criptografar (texto) {
+    if (letra == "a"){
+        document.write("ai")
+    }
+};
 
-return texto;
+function criptografar (texto) {
+    if (letra == "o"){
+        document.write("ober")
+    }
+};
+
+function criptografar (letra) {
+    if (letra == "u"){
+        document.write("ufat")
+    }
+
+    InputDeviceInfo.value = "texto";
+};
+
+criptografa.onclick = criptografar;
+
+
 
 // 5 Jogar no lugar da img e da frase Nenhuma mensagem...    
 //}
@@ -107,6 +76,12 @@ return texto;
 // 6 Botão descriptografar
 // function (textoOriginal) {
 //  Volta ao texto original novamente  
-var acaoBotaoDescriptografa = document.querySelector("descriptografar");
+var acaoBotaoDescriptografa = document.querySelector("descriptografa");
+
+function descriptografar (){
+
+};
+
+descriptografa.onclick = descriptografar;
 
 //}

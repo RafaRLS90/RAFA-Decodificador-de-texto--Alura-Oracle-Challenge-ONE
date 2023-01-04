@@ -4,14 +4,14 @@
 
 body {
     background: #ADD8E6;
-    position:fixed;
+    position:relative;
     width: 940px ;
     margin: 0 auto;
-    padding: 2px 0;
+    padding: 3px 0;
     
 }
 
-form {
+.caixa1 {
     display: inline-block;
     margin-top: 15px;
     vertical-align: bottom;
@@ -104,12 +104,16 @@ main {
     margin-left: 90px;
     margin-top: 15px;
     position: absolute;
-    left: 550px;
+    left: 540px;
     top: 0;
     background-color: 	#4682B4;
     border-radius: 5px;
     padding: 10px 0;
     box-shadow: 4px 4px 3px 1px #000000;
+}
+
+.imagem-principal {
+    display: flex;
 }
 
 .texto-geral-retorno {
@@ -126,11 +130,29 @@ main {
     font-size: 20px;
     font-weight: bold;
     margin-top: 2px;
+    display: flex;
 }
 
 #frase-de-chamada {
     width: 50%;
     display: flex;
+}
+
+.caixa2 {
+    text-align: center;
+    align-items: flex-start;
+    display:flexbox;
+    margin-left: 00px;
+    padding: 100px 0;
+    color: #000080;
+    display: none;
+}
+
+#texto-codificado {
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 1px #000000;
+    border-radius: 5px;
+    display: none;
 }
 
 .copiar {
@@ -148,13 +170,14 @@ main {
     flex-direction: 0;
     font-weight: bold;
     margin-left: 110px;
-    color: #000000;
+    color:#0a3871;
     box-shadow: 2px 2px 1px #000000;
     display: none;
 }
 
 footer {
     text-align: center;
+    display:flex;
 }
 
 .copyright {
