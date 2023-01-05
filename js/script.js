@@ -1,38 +1,19 @@
-
-
-
 var textoEntrada = document.querySelector("caixa-texto");
+var textoSaida = document.querySelector("segunda-caixa-texto");
 
 
-document.write("");
-
-
-
-function mostra(textoEntrada) {
-
-    document.write("input");
-    
-};
-
-var texto = document.querySelector("input");
-
-function criptografar (texto) {
-    if (input.value == "e"){
-        print.textoEntrada("enter");
+function criptografar () {
+    var texto = textoEntrada.value;
+        
+    var transformCripto =    
+        texto.replace(/e/g, "enter");
+        texto.replace(/i/g,"imes");
+        texto.replace(/a/g, "ai");
+        texto.replace(/o/g, "ober");
+        texto.replace(/u/g, "ufat");
+        texto.replace(/u/g, "ufat");
     }
-    if (input.value == "i"){
-        print.textoEntrada("imes");
-    }
-    if (input.value == "a"){
-        print.textoEntrada("ai");
-    }
-    if (input.value == "o"){
-        print.textoEntrada("ober");
-    }
-    if (InputEvent == "u"){
-        print.textoEntrada("ufat");
-    }
-};
+
 
 criptografa.onclick = criptografar;
 
