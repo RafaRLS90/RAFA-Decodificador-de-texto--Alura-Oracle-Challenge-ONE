@@ -15,9 +15,9 @@ function criptografar () {
     }
 
 
-criptografa.onclick = criptografar;
+document.getElementById("segunda-caixa-texto").innerHTML = '<textarea readonly id="caixa-texto">' + transformCripto + '<textarea>' + '<button class ="copiar" id="acao-copiar" onclick="copiar()">Copiar</button>'
 
-return textoEntrada;
+
 
 
 
