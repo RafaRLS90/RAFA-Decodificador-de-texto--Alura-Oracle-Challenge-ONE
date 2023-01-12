@@ -11,22 +11,34 @@ function criptografar () {
         texto.replace(/a/g, "ai");
         texto.replace(/o/g, "ober");
         texto.replace(/u/g, "ufat");
-        texto.replace(/u/g, "ufat");
-    }
+        
+   
+   
+        document.getElementById("caixa-texto").innerHTML = '<textarea readonly id="text-para-codificar">' + transformCripto + 
+        '</textarea>' + '<button class ="copiar" id="botao-copia" onclick="copiar()">Copiar</button>'
+    };
 
-
-document.getElementById("segunda-caixa-texto").innerHTML = '<textarea readonly id="caixa-texto">' + transformCripto + '<textarea>' + '<button class ="copiar" id="acao-copiar" onclick="copiar()">Copiar</button>'
-
-
-
-
-
-
-var acaoBotaoDescriptografa = document.querySelector("descriptografa");
 
 function descriptografar (){
+    var texto = textoEntrada.value;
+
+    var transformDescripto = 
+    texto.replace(/enter/g, "e");
+    texto.replace(/imes/g,"i");
+    texto.replace(/ai/g, "a");
+    texto.replace(/ober/g, "o");
+    texto.replace(/ufat/g, "u");
+    
+    document.getElementById("segunda-caixa-texto").innerHTML = '<textarea readonly id="text-para-codificar">' + transformDescripto + 
+    '</textarea>' + '<button class ="copiar" id="botao-copia" onclick="copiar()">Copiar</button>'
 
 };
 
-descriptografa.onclick = descriptografar;
+function copiar(){
+    var copieTexto = document.getElementById('#caixa-texto');
+
+    copieTexto.select();
+    document.execCommand('copy');
+    alert("Texto copiado!!!")
+};
 
