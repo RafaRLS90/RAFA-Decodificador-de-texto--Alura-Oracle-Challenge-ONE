@@ -30,16 +30,15 @@ body {
 }
 
 .input-padrao {
-    border-radius: 5px;
+    border: none;
     margin: 0 0 15px 0;
     margin-left: 15px;
-    border: 2px solid 	#6495ED;
-    box-shadow: 4px 4px 2px #000080;
+    
 }
 
-.caixa-texto {
+/*.caixa-texto {
     display: none;
-}
+}*/
 
 
 
