@@ -1,92 +1,107 @@
 * {
     font-family: 'Righteous', sans-serif;
-}
-
-body {
     background: #ADD8E6;
-    position:relative;
-    width: 940px ;
-    margin: 0 auto;
-    padding: 3px 0;
-    
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 120%;
 }
 
-.caixa1 {
-    display: inline-block;
-    margin-top: 15px;
-    vertical-align: bottom;
-    padding: 50px 0;
+.logoCadeado {
+    margin-left: 10px;
+    padding-top: 15px;
+    width: 5%;
 }
 
-.titulo-principal {
-    font-family: 'Righteous', sans-serif;
-    font-size: 20px;
-    margin: 0 0 15px 0;
-    margin-left: 15px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 15px;
-    color: #0a3871;
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
 }
 
 .input-padrao {
     border: none;
-    margin: 0 0 15px 0;
-    margin-left: 15px;
-    background: #ADD8E6;
+    color: #191970;
+    margin-top: 90px;
+    text-transform: lowercase;
 }
 
-/*.caixa-texto {
-    display: none;
-}*/
+::placeholder { color: #0a3871;}
+    .text-area:focus {
+        outline: none;
+    }
+    
 
+    .texto-secundario {
+        padding: auto;
+        display: flex;
+        
+  }
 
+    .texto-codificado {
+    background: white;
+    background-image: url(/images/avatar-decode.svg);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+    color: #0a3871;
+    margin-left: 97px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    width: 30%;
+}
+
+.texto-codificado:focus {
+    outline: none;
+}
 
 .criptografa {
-    flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
     gap: 8px;
-    width: 20%;
     height: 67px;
     background: #0a3871;
-    border: 2px solid #696969;
-    border-radius: 5px;
-    flex: none;
-    order: 0;
-    flex-direction: 0;
+    border: 1px solid #696969;
+    border-radius: 24px;
     margin-right: 10%;
     font-weight: bold;
     color: #d8dfe8;
+    width: 200px;
     box-shadow: 3px 3px 1px #000000;
+    cursor: pointer;
 }
-
 
 
 .descriptografa {
-    flex-direction: row;
+    
     align-items: flex-start;
-    padding: 24px;
     gap: 8px;
-    width: 20%;
+    width: 200px;
     height: 67px;
     background: #d8dfe8;
-    border: 2px solid #0a3871;
-    border-radius: 5px;
-    flex: none;
-    order: 1;
-    flex-direction: 0;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
     font-weight: bold;
-    margin-left: 75px;
+    margin-left: 10px;
     color: #0a3871;
-    box-shadow: 2px 2px 1px #000000;
+    box-shadow: 3px 3px 1px #000000;
+    cursor: pointer;
 }
 
-.botoes {
-    display: flex;
-    margin: 00 00 0 10px;
-    padding: 170px 0;
-
+.copia {
+    align-items: flex-start;
+    gap: 8px;
+    width: 200px;
+    height: 67px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-weight: bold;
+    margin-left: 140px;
+    margin-top: 407px;
+    color: #0a3871;
+    box-shadow: 3px 3px 1px #000000;
+    cursor: pointer;
+    position: absolute;
 }
 
 #acao-botao:hover {
@@ -97,86 +112,10 @@ body {
     transform: scale(1.1);
 }
 
-main {
-    width: 40%;
-    display: inline;
-    margin-left: 90px;
-    margin-top: 15px;
-    position: absolute;
-    left: 540px;
-    top: 0;
-    background-color: 	#4682B4;
-    border-radius: 5px;
-    padding: 10px 0;
-    box-shadow: 4px 4px 3px 1px #000000;
-}
-
-.imagem-principal {
-    display: flex;
-}
-
-.texto-geral-retorno {
- text-align:center;
- margin-left: 90px;
- margin-bottom: 90px;
- background-color: #4682B4;
- display: flex;
- padding: 2px 0
-}
-
-#buscador {
-    width: 50%;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 2px;
-    display: flex;
-}
-
-#frase-de-chamada {
-    width: 50%;
-    display: flex;
-}
-
-.caixa2 {
-    text-align: center;
-    align-items: flex-start;
-    display:flexbox;
-    margin-left: 00px;
-    padding: 100px 0;
-    color: #000080;
-    display: none;
-}
-
-#texto-codificado {
-    border: 2px solid #000000;
-    box-shadow: 2px 2px 1px #000000;
-    border-radius: 5px;
-    display: none;
-}
-
-.copiar {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    width: 40%;
-    height: 67px;
-    background: #d8dfe8;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    flex: none;
-    order: 1;
-    flex-direction: 0;
-    font-weight: bold;
-    margin-left: 110px;
-    color:#0a3871;
-    box-shadow: 2px 2px 1px #000000;
-    display: none;
-}
-
 footer {
     text-align: center;
     display:flex;
+    
 }
 
 .copyright {
@@ -184,24 +123,3 @@ footer {
     font-size: 12px;
 }
 
-@media screen  and (max-width: 480px) {
-    .form, .botoes, .titulo-principal, .input-padrao {
-        width: auto;
-        position: static;
-    }
-
-    main {
-        width: 100%;
-        display: inline-block;
-    }
-
-    .input-padrao {
-        width: 100%;
-
-    }
-
-    #acao-botao {
-        padding:20px 5px;
-        display: inline-block;
-    }
-}

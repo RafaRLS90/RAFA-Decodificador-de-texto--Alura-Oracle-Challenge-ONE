@@ -1,4 +1,4 @@
-* {
+/** {
     font-family: 'Righteous', sans-serif;
 }
 
@@ -42,7 +42,7 @@ body {
 }*/
 
 
-
+/*
 .criptografa {
     flex-direction: row;
     align-items: flex-start;
@@ -112,9 +112,6 @@ main {
     box-shadow: 4px 4px 3px 1px #000000;
 }
 
-.imagem-principal {
-    display: flex;
-}
 
 .texto-geral-retorno {
  text-align:center;
@@ -205,4 +202,4 @@ footer {
         padding:20px 5px;
         display: inline-block;
     }
-}
+}*/
