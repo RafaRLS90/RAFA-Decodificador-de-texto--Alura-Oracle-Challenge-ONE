@@ -1,41 +1,41 @@
-var textoEntrada = document.querySelector("caixa-texto");
-var textoSaida = document.querySelector("segunda-caixa-texto");
+var textoEntrada = document.querySelector("#input-padrao");
+var textoSaida = document.querySelector("#texto-codificado");
 
 
 function criptografar () {
-    var texto = textoEntrada.value;
-        
-    var transformCripto =    
-        texto.replace(/e/g, "enter");
-        texto.replace(/i/g,"imes");
-        texto.replace(/a/g, "ai");
-        texto.replace(/o/g, "ober");
-        texto.replace(/u/g, "ufat");
-        
+   // O método toLowerCase() retorna o valor da string que foi chamada convertido para minúsculo.
+   // i afeta tanto minusculas, quanto maísculas
+   // g afeta toda linha
+   // m afeta linha e parágrafo
    
-   
-        document.getElementById("caixa-texto").innerHTML = '<textarea readonly id="text-para-codificar">' + transformCripto + 
-        '</textarea>' + '<button class ="copiar" id="botao-copia" onclick="copiar()">Copiar</button>'
-    };
+    var texto = document.getElementById("input-padrao").value.toLowerCase();
+    
+    var transformCripto = texto.replace(/e/igm, "enter");
+    var transformCripto = transformCripto.replace(/i/igm,"imes");
+    var transformCripto = transformCripto.replace(/a/igm, "ai");
+    var transformCripto = transformCripto.replace(/o/igm, "ober");
+    var transformCripto = transformCripto.replace(/u/igm, "ufat");
+    
+    document.getElementById("url(/images/avatar-decode.svg)").style.display = none;
+    document.getElementById("texto-secundario").innerHTML = transformCripto;
+}
 
 
 function descriptografar (){
-    var texto = textoEntrada.value;
+    var texto = document.getElementById("input-padrao").value.toLowerCase();
 
-    var transformDescripto = 
-    texto.replace(/enter/g, "e");
-    texto.replace(/imes/g,"i");
-    texto.replace(/ai/g, "a");
-    texto.replace(/ober/g, "o");
-    texto.replace(/ufat/g, "u");
+    var transformDescripto = texto.replace(/enter/igm, "e");
+    var transformDescripto = transformDescripto.replace(/imes/igm,"i");
+    var transformDescripto = transformDescripto.replace(/ai/igm, "a");
+    var transformDescripto = transformDescripto.replace(/ober/igm, "o");
+    var transformDescripto =  transformDescripto.replace(/ufat/igm, "u");
+   
     
-    document.getElementById("segunda-caixa-texto").innerHTML = '<textarea readonly id="text-para-codificar">' + transformDescripto + 
-    '</textarea>' + '<button class ="copiar" id="botao-copia" onclick="copiar()">Copiar</button>'
-
+    
 };
 
 function copiar(){
-    var copieTexto = document.getElementById('#caixa-texto');
+    var copieTexto = document.getElementById('input-padrao');
 
     copieTexto.select();
     document.execCommand('copy');

@@ -20,29 +20,30 @@
      <main>
      
         <section>
-            <textarea class="input-padrao" cols="41" rows="4"  placeholder="Digite seu texto aqui!!!"></textarea>
+            <textarea id="input-padrao" cols="41" rows="4"  placeholder="Digite seu texto aqui!!!"></textarea>
     
-            <div class="Informação">
+            <div class="informação">
                 Apenas letras minusculas, e sem acento!!!
             </div>
     
                 <div class="botoes">
-                    <button onclick="criptografar()" id="acao-botao" class="criptografa">Criptografar</button>
-                    <button onclick="descriptografar()"  id="acao-botao" class="descriptografa">Descriptografar</button>
+                    <button onclick="criptografar()" id="acao-botao-cri" class="criptografa">Criptografar</button>
+                    <button onclick="descriptografar()"  id="acao-botao-des" class="descriptografa">Descriptografar</button>
                 </div>
     
         </section>
        
         <section class="texto-secundario">
-            <textarea class="texto-codificado" cols="20" rows="10" ></textarea>
-            <button  id="acao-botao"class="copia">Copiar</button>
+            <textarea id="texto-codificado" cols="20" rows="15" ></textarea>
+            <button  onclick="copiar()" id="comando-copia"class="copia">Copiar</button>
         </section>
     </main>
     
     <footer>
         <p class="copyright">&copy; Copyright Challenge Oracle ONE - Lógica de Programação-2022</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
+
 
 </html>

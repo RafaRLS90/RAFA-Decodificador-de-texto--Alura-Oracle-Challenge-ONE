@@ -203,3 +203,10 @@ footer {
         display: inline-block;
     }
 }*/
+
+/*document.getElementById("input-padrao").innerHTML = '<textarea readonly id="input-padrao">' + transformCripto + 
+'</textarea>' + '<button  id="comando-copia" onclick="copiar()">Copiar</button>'
+};
+
+document.getElementById("texto-codificado").innerHTML = '<textarea readonly id="input-padrao">' + transformDescripto + 
+    '</textarea>' + '<button id="comando-copia" onclick="copiar()">Copiar</button>'
