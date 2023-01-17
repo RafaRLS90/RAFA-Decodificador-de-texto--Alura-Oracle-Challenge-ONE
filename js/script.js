@@ -16,8 +16,9 @@ function criptografar () {
     var transformCripto = transformCripto.replace(/o/igm, "ober");
     var transformCripto = transformCripto.replace(/u/igm, "ufat");
     
-    document.getElementById("url(/images/avatar-decode.svg)").style.display = none;
-    document.getElementById("texto-secundario").innerHTML = transformCripto;
+    
+    document.getElementById("texto-secundario").innerHTML = texto;
+    console.log("texto")
 }
 
 

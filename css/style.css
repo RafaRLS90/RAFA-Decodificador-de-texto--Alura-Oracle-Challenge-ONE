@@ -24,6 +24,7 @@ main {
     color: #191970;
     margin-top: 90px;
     text-transform: lowercase;
+    outline: none;
 }
 
 ::placeholder { color: #0a3871;}
@@ -132,7 +133,7 @@ main {
     transform: scale(1.1);
 }
 
-.copyright {
+/*.copyright {
     color: #0a3871;
     font-size: 12px;
     
@@ -142,7 +143,7 @@ footer {
     text-align: left;
     padding-top: 100px;
     margin-bottom: 100px;
-}
+}*/
 
 
 
