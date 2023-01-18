@@ -9,7 +9,7 @@
 .logoCadeado {
     margin-left: 10px;
     padding-top: 15px;
-    width: 5%;
+    width: 10%;
 }
 
 main {
@@ -43,8 +43,8 @@ main {
   }
 
     #texto-codificado {
-    background: white;
-    background-image: url(/images/avatar-decode.svg);
+    background: #ADD8E6;
+    /*background-image: url(/images/avatar-decode.svg);*/
     background-repeat: no-repeat;
     border: none;
     border-radius: 20px;
@@ -54,6 +54,11 @@ main {
     padding-left: 20px;
     position: fixed;
     width: 30%;
+    display: none;
+}
+
+#imagem-principal{
+    margin-left: 97px;
 }
 
 #texto-codificado:focus {
