@@ -20,24 +20,30 @@ function criptografar () {
     
     document.getElementById("imagem-principal").style.display = "none";
     document.getElementById("texto-codificado").style.display = "block";
+    document.getElementById("comando-copia").style.display = "block";
+    document.getElementById("mensagem-chamada").style.display = "none";
 }
 
 
 function descriptografar (){
     var texto = document.getElementById("input-padrao").value.toLowerCase();
 
-    var desTransformDescripto = texto.replace(/enter/igm, "e");
-    var desTransformDescripto = desTransformDescripto.replace(/imes/igm,"i");
-    var desTransformDescripto = desTransformDescripto.replace(/ai/igm, "a");
-    var desTransformDescripto = desTransformDescripto.replace(/ober/igm, "o");
-    var desTransformDescripto =  desTransformDescripto.replace(/ufat/igm, "u");
+    var transformCripto = texto.replace(/enter/igm, "e");
+    var transformCripto = transformCripto.replace(/imes/igm,"i");
+    var transformCripto = transformCripto.replace(/ai/igm, "a");
+    var transformCripto = transformCripto.replace(/ober/igm, "o");
+    var transformCripto =  transformCripto.replace(/ufat/igm, "u");
    
+    document.getElementById("texto-codificado").innerHTML = transformCripto;
     
-    document.getElementById("texto-input").innerHTML = desTransformCripto;
+    document.getElementById("imagem-principal").style.display = "none";
+    document.getElementById("texto-codificado").style.display = "block";
+    document.getElementById("comando-copia").style.display = "block";
+    document.getElementById("mensagem-chamada").style.display = "none";
 };
 
 function copiar(){
-    var copieTexto = document.getElementById("texto-codificado");
+    var copieTexto = document.querySelector("#texto-codificado");
 
     copieTexto.select();
     document.execCommand('copy');

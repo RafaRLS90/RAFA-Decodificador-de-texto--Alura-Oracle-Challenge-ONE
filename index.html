@@ -6,40 +6,43 @@
     <title>Decodificador de texto</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./reset.css/reset.css">
-    
+
 </head>
+
 <body>
     <header>
-        <img  class="logoCadeado" src="/images/cadeado-azul-simples.png" alt="Logo cadeado"  height="60" width="60">
-     </header>
+        <img class="logoCadeado" src="/images/cadeado-azul-simples.png" alt="Logo cadeado" height="60" width="60">
+    </header>
 
 
-     <main>
-     
+    <main>
+
         <section>
-            <textarea id="input-padrao" cols="41" rows="4"  placeholder="Digite seu texto aqui!!!"></textarea>
-    
+            <textarea spellcheck="false" id="input-padrao" cols="41" rows="4" placeholder="Digite seu texto aqui!!!"></textarea>
+
             <div class="informação">
                 Apenas letras minusculas, e sem acento!!!
             </div>
-    
-                <div class="botoes">
-                    <button onclick="criptografar()" id="acao-botao-cri" class="criptografa">Criptografar</button>
-                    <button onclick="descriptografar()"  id="acao-botao-des" class="descriptografa">Descriptografar</button>
-                </div>
-    
+
+            <div class="botoes">
+                <button onclick="criptografar()" id="acao-botao-cri" class="criptografa">Criptografar</button>
+                <button onclick="descriptografar()" id="acao-botao-des" class="descriptografa">Descriptografar</button>
+            </div>
+
         </section>
-       
+
         <section class="texto-secundario">
             <img id="imagem-principal" src="./images/avatar-decode.svg" alt="Imagem do boneco com lupa decode">
-            <textarea id="texto-codificado" cols="20" rows="15" ></textarea>
-            <button  onclick="copiar()" id="comando-copia"class="copia">Copiar</button>
+            <textarea spellcheck="false" id="texto-codificado" cols="20" rows="15"></textarea>
+            <button onclick="copiar()" id="comando-copia" class="copia">Copiar</button>
+            <h4 id="mensagem-chamada">Nenhum mensagem encontrada...</h4>
         </section>
     </main>
-    
     <!--<footer>
         <p class="copyright">&copy; Copyright Challenge Oracle ONE - Lógica de Programação-2022</p>
     </footer>-->

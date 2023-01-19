@@ -43,7 +43,7 @@ main {
   }
 
     #texto-codificado {
-    background: #ADD8E6;
+    background: #1865A2;
     /*background-image: url(/images/avatar-decode.svg);*/
     background-repeat: no-repeat;
     border: none;
@@ -60,6 +60,16 @@ main {
 #imagem-principal{
     margin-left: 97px;
 }
+
+#mensagem-chamada {
+    margin-top: 400px;
+    padding-left: 140px;
+    position: fixed;
+    width: 30%;
+    font-size: 17px;
+    color: #002882;
+}
+
 
 #texto-codificado:focus {
     outline: none;
@@ -112,6 +122,7 @@ main {
     box-shadow: 3px 3px 1px #000000;
     cursor: pointer;
     position: absolute;
+    display: none;
 }
 
 #acao-botao-cri:hover {
