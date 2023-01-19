@@ -40,6 +40,7 @@ function descriptografar (){
     document.getElementById("texto-codificado").style.display = "block";
     document.getElementById("comando-copia").style.display = "block";
     document.getElementById("mensagem-chamada").style.display = "none";
+     
 };
 
 function copiar(){
@@ -48,5 +49,6 @@ function copiar(){
     copieTexto.select();
     document.execCommand('copy');
     alert("Texto copiado!!!")
+    
 };
 
