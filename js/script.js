@@ -5,7 +5,8 @@ var textoSaida = document.querySelector("#texto-codificado");
    // i afeta tanto minusculas, quanto maísculas
    // g afeta toda linha
    // m afeta linha e parágrafo
-function criptografar () {
+
+   function criptografar () {
     
     var texto = document.getElementById("input-padrao").value.toLowerCase();
     
@@ -14,7 +15,7 @@ function criptografar () {
     var transformCripto = transformCripto.replace(/a/igm, "ai");
     var transformCripto = transformCripto.replace(/o/igm, "ober");
     var transformCripto = transformCripto.replace(/u/igm, "ufat");
-    
+    var transformCripto = transformCripto.replace(/[\u0300-\u036f]/g , "");
     
     document.getElementById("texto-codificado").innerHTML = transformCripto;
     
