@@ -1,21 +1,29 @@
-var textoEntrada = document.querySelector("#input-padrao");
-var textoSaida = document.querySelector("#texto-codificado");
-
-   // O método toLowerCase() retorna o valor da string que foi chamada convertido para minúsculo.
+    
+    // O método toLowerCase() retorna o valor da string que foi chamada convertido para minúsculo.
    // i afeta tanto minusculas, quanto maísculas
    // g afeta toda linha
    // m afeta linha e parágrafo
+   // var textoSemAcento = texto.normalize("NFD").replace(/[\u0300 -\u036f]/g, "");
+   // var transformCripto = transformCripto.replace(/[\u0300-\u036f]/g , "");
 
+   function tiraAcento () {
+    
+    let textoSemAcento = texto.normalize("NFD").replace(/[\u0300 -\u036f]/g, "");
+
+   }
+   
    function criptografar () {
     
     var texto = document.getElementById("input-padrao").value.toLowerCase();
     
+  
+
     var transformCripto = texto.replace(/e/igm, "enter");
     var transformCripto = transformCripto.replace(/i/igm,"imes");
     var transformCripto = transformCripto.replace(/a/igm, "ai");
     var transformCripto = transformCripto.replace(/o/igm, "ober");
     var transformCripto = transformCripto.replace(/u/igm, "ufat");
-    var transformCripto = transformCripto.replace(/[\u0300-\u036f]/g , "");
+    
     
     document.getElementById("texto-codificado").innerHTML = transformCripto;
     
