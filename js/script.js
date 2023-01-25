@@ -6,11 +6,7 @@
    // var textoSemAcento = texto.normalize("NFD").replace(/[\u0300 -\u036f]/g, "");
    // var transformCripto = transformCripto.replace(/[\u0300-\u036f]/g , "");
 
-   function tiraAcento () {
-    
-    let textoSemAcento = texto.normalize("NFD").replace(/[\u0300 -\u036f]/g, "");
 
-   }
    
    function criptografar () {
     
@@ -31,6 +27,8 @@
     document.getElementById("texto-codificado").style.display = "block";
     document.getElementById("comando-copia").style.display = "block";
     document.getElementById("mensagem-chamada").style.display = "none";
+    document.getElementById("acao-botao-limpa").style.display = "block";
+    document.getElementById("acao-botao-cola").style.display = "block";
 }
 
 
@@ -61,3 +59,17 @@ function copiar(){
     
 };
 
+function limpar() {
+   
+    document. getElementById("input-padrao"). value = '';
+    document.getElementById("imagem-principal").style.display = "block";
+    document.getElementById("acao-botao-limpa").style.display = "none";
+    document.getElementById("acao-botao-cola").style.display = "none";
+    document.getElementById("texto-codificado").style.display = "none";
+
+};
+
+function cola() {
+    document. getElementById("input-padrao"). value = 'copieTexto';
+
+}

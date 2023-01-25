@@ -59,7 +59,7 @@ main {
 }
 
 #imagem-principal{
-    margin-left: 97px;
+    margin-left: 38px;
 }
 
 #mensagem-chamada {
@@ -108,6 +108,38 @@ main {
     cursor: pointer;
 }
 
+
+.limpa {
+    margin-top: 40px;
+    width: 200px;
+    height: 67px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 1px #000000;
+    cursor: pointer;
+    color:#033061;
+    background-color:#C2D4ED ;
+    display: none;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+}
+
+.cola {
+    margin-top: 35px;
+    margin-left: 260px;
+    width: 200px;
+    height: 67px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 1px #000000;
+    cursor: pointer;
+    color: #696969;
+    background-color: #033061;
+    display: none;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+}
+
 .copia {
     align-items: flex-start;
     gap: 8px;
@@ -149,6 +181,24 @@ main {
     transition: 1s border color;
     transform: scale(1.1);
 }
+
+#acao-botao-limpa:hover {
+    border:2.5px solid #191970 ;
+    cursor: pointer;
+    color: #1E90FF;
+    transition: 1s border color;
+    transform: scale(1.1);
+}
+
+#acao-botao-cola:hover {
+    border:2.5px solid #191970 ;
+    cursor: pointer;
+    color: #1E90FF;
+    transition: 1s border color;
+    transform: scale(1.1);
+}
+
+
 
 /*.copyright {
     color: #0a3871;
