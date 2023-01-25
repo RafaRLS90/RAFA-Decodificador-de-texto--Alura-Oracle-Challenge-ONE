@@ -202,6 +202,71 @@ footer {
         padding:20px 5px;
         display: inline-block;
     }
+
+    .cola {
+    margin-top: 35px;
+    margin-left: 260px;
+    width: 200px;
+    height: 67px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 1px #000000;
+    cursor: pointer;
+    color: #696969;
+    background-color: #033061;
+    display: none;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+}
+
+#acao-botao-cola:hover {
+    border:2.5px solid #191970 ;
+    cursor: pointer;
+    color: #1E90FF;
+    transition: 1s border color;
+    transform: scale(1.1);
+}
+
+//function colar(){
+    //var colarTexto = document.querySelector("#input-padrao");
+
+  // colarTexto.select();
+  //  document.execCommand('paste');
+  //  alert("Texto colado!!!")
+    
+ //   console.log(colarTexto)
+//};
+
+    
+//btnCopiar.addEventListener('click', (e) =>{
+  //  navigator.clipboard.writeText(textAreaCampoA.value);
+    //alert('Texto copiado!')
+///});
+
+//btnColar.addEventListener('click', async (e)=>{
+  //  const resposta = await navigator.clipboard.readText();
+    //textAreaCampoB.value = resposta;
+    //alert('Inserir cópia no campo!');
+//});
+
+    
+    // O método toLowerCase() retorna o valor da string que foi chamada convertido para minúsculo.
+   // i afeta tanto minusculas, quanto maísculas
+   // g afeta toda linha
+   // m afeta linha e parágrafo
+   // var textoSemAcento = texto.normalize("NFD").replace(/[\u0300 -\u036f]/g, "");
+   // var transformCripto = transformCripto.replace(/[\u0300-\u036f]/g , "");
+
+  // var texto;
+   //var transformCripto;
+  // const textAreaCampoA = document.querySelector(".texto-codificado");
+  //  const btnCopiar = document.getElementById(".copia");
+  //  const btnColar = document.querySelector(".cola");
+   // const textAreaCampoB = document.querySelector(".input-padrao");
+   //function removeAcentos (transformCripto) {
+    //return transformCripto.normalize("NFD").replace(/[^a-z\s]/g, "");
+  //}
+
 }*/
 
 /*document.getElementById("input-padrao").innerHTML = '<textarea readonly id="input-padrao">' + transformCripto + 

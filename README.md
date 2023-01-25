@@ -1,3 +1,18 @@
+# Encriptador de texto, desafio Alura
+
+Já pensou ter uma página que transforma sua mensagem, em um texto codificado?
+
+Isso que o desafio da Alura nos trás.
+
+## Nesse projeto
+Embarcamos na construção de um decodificador de texto, que transforma as palavras em um código criptografado.
+
+### Aceita apenas letras minúsculas
+### Carrega a mensagem criptografada em uma outra caixa de texto
+
+### Tem botões para a função criptografar, descriptografar e limpar
+
+### Não aceita para encriptação, letras com acento
 # Rascunho do JS
 
 // 1 Quando digitar letra, subsitutir por código
@@ -13,24 +28,8 @@
 
 // se letra igual a..., substitua por....
 
-// descrição de cada letra
+![tela inicial](./images/tela-inicial.png)
 
+![tela criptografar](./images/tela-criptografar.png)
 
-// 2 function textoAtivo (texto) {
-    
-// 3 Receba texto,
-
-// 4 Por uma outra função interna function {
-// Botão criptografar, dará o comando para alterar o texto    
-//} O segundo input receberá por uma função o valor de texto entrada
-
-// 5 Jogar no lugar da img e da frase Nenhuma mensagem...    
-//}
-
-// 5 fuction botaoCopiarAtivo {
-// Com o texto ativado na região da img, substituir texto Digite um texto..., por botão copiar   
-//}
-
-// 6 Botão descriptografar
-// function (textoOriginal) {
-//  Volta ao texto original novamente  //}
+![tela texto copiado](./images/texto-copiado.png)
